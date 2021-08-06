@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="./styles/mobile.css">
+    <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="card">
-      <!-- Head img -->
-      <figure class="card__head-container">
-        <img class="head-img" src="" alt="head-img">
-      </figure>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/mobile.css" />
 
-      <!-- Card content -->
-      <div>
-        <!-- Text - Content -->
-        <h3>Order Summary</h3>
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
-        </p>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- Annual Plan - Content -->
-        <div>
-          <figure>
-            <img src="" alt="i">
-          </figure>
-          <div>
-            <p>Annual Plan</p>
-            <p>$59.99/year</p>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        margin-top: 20px;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <!-- Card img -->
+        <figure class="card__img-container"></figure>
+
+        <!-- Card content -->
+        <div class="card__content">
+          <!-- Text - Content -->
+          <h3 class="card__title">Order Summary</h3>
+          <p class="card__text">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+
+          <!-- Annual Plan - Content -->
+          <div class="card__plan">
+            <figure class="plan__icon-container">
+              <img class="icon" src="./images/icon-music.svg" />
+            </figure>
+            <div class="plan__price-container">
+              <h4 class="price__title">Annual Plan</h4>
+              <p class="price__text">$59.99/year</p>
+            </div>
+            <a class="plan__link" href="">Change</a>
           </div>
-          <a href="">Change</a>
-        </div>
 
-        <!-- Buttons -->
-        <button>Proceed to Payment</button>
-        <button>Cancel Order</button>
+          <!-- Buttons -->
+          <button class="card__btn btn--primary">Proceed to Payment</button>
+          <button class="card__btn btn--secondary">Cancel Order</button>
+        </div>
+      </div>
+
+      <!-- Attributions -->
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/PikyR" target="_blank">PikyR &#128122;</a>.
       </div>
     </div>
-  </div>
-
-  <!-- Attributions -->
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </body>
 </html>
