@@ -6,12 +6,9 @@ body{
 }
 
 .container{
-  background-color: blanchedalmond;
-
   width: 500px;
   min-width: none;
   max-width: none;  
-  
   padding-top: none;
 }
 
